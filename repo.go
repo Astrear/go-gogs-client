@@ -124,3 +124,19 @@ func (c *Client) MigrateRepo(opt MigrateRepoOption) (*Repository, error) {
 	repo := new(Repository)
 	return repo, c.getParsedResponse("POST", "/repos/migrate", jsonHeader, bytes.NewReader(body), repo)
 }
+
+
+//  __________         __  .__                
+//  \______   \_____ _/  |_|__| ____    ____  
+//   |       _/\__  \\   __\  |/    \  / ___\ 
+//   |    |   \ / __ \|  | |  |   |  \/ /_/  >
+//   |____|_  /(____  /__| |__|___|  /\___  / 
+//          \/      \/             \//_____/  
+
+
+
+type Rate struct {
+	UserID      	int64  	`json:"userID"`
+	RepoID  		int64 	`json:"repoID"`
+	Calificacion  	int 	`json:"calificacion"`
+}
