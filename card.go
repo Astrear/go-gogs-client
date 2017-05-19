@@ -19,6 +19,7 @@ type Card struct {
 	State     int		`json:"State"`
 	Priority  int 		`json:"Priority"`
 	Duration  int64  	`json:"Duration"`
+	Time 	  int64 	`json:"Time"`
 	Activated int64		`json:"Activated"`
 	CreateD   int64 	`json:"Created"`
 }
